@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap");
+.home {
+  width: 90vw;
+  height: auto;
+  margin: 1em auto;
+}
+.searchbox {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1%;
+  align-items: center;
+  padding: 1em;
+  box-sizing: border-box;
+}
+.searchbox input {
+  width: 80%;
+  padding: 0.5em;
+  outline: none;
+  margin-right: 0.5em;
+  border: none;
+  border-bottom: 2px solid purple;
+  background-color: transparent;
+}
+.searchbox button {
+  width: 19%;
+  padding: 0.45em;
+  letter-spacing: 3px;
+  background-color: transparent;
+  border-radius: 8px;
+}
+.item {
+  width: 80%;
+  margin: 1em auto;
+  padding: 0.8em;
+  border-radius: 1em;
+  transition: ease 0.5s;
+  background-color: lightskyblue;
+  box-shadow: 24px 24px 59px #b0b0b044, -24px -24px 59px #ffffff65;
+}
+.item:hover {
+  border: 1px solid aliceblue;
+  width: 82%;
+  color: aliceblue;
+  background-color: rgba(0, 0, 255, 0.9);
+}
+.companyname {
+  margin: 0;
+  font-size: 1.5em;
+  font-family: "Red Hat Mono", monospace;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+.location {
+  margin: 0;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
+  .searchbox {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1%;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
+  .searchbox {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1%;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  .searchbox input {
+    width: 65%;
+    padding: 0.5em;
+    outline: none;
+    margin-right: 0.5em;
+    border: none;
+    border-bottom: 2px solid purple;
+    background-color: transparent;
+  }
+  .searchbox button {
+    width: 27%;
+    padding: 0.45em;
+    letter-spacing: 3px;
+    background-color: transparent;
+    border-radius: 8px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .searchbox {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1%;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  .searchbox input {
+    width: 65%;
+    padding: 0.5em;
+    outline: none;
+    margin-right: 0.5em;
+    border: none;
+    border-bottom: 2px solid purple;
+    background-color: transparent;
+  }
+  .searchbox button {
+    width: 27%;
+    padding: 0.45em;
+    letter-spacing: 3px;
+    background-color: transparent;
+    border-radius: 8px;
+  }
+}
